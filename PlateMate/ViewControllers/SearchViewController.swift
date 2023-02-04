@@ -8,14 +8,27 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    @IBOutlet var myLabel: UILabel!
-    @IBOutlet var logo: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        myLabel.text = "yo"
-        logo.image = UIImage(named: "platemateLogo")
         
     }
+//<<<<<<< HEAD
+//=======
+    
+    
+    @IBAction func getRequest(_ sender: UIButton) {
+        let url = URL(string: "http://20.14.97.80")!
+
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            guard let data = data else { return }
+            print(String(data: data, encoding: .utf8)!)
+        }
+
+        task.resume()
+    }
+    
+
+//>>>>>>> 3519dbda4b483dea6d31b14bf860a8bfe535b3db
 }
