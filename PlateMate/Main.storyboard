@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <color key="tintColor" systemColor="systemBrownColor"/>
-                                <edgeInsets key="layoutMargins" top="100" left="100" bottom="8" right="8"/>
+                                <edgeInsets key="layoutMargins" top="100" left="100" bottom="50" right="8"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
@@ -124,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6N-7c-EGm">
-                                <rect key="frame" x="134.5" y="432.5" width="145" height="31"/>
+                                <rect key="frame" x="124" y="431" width="166" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click to view detail"/>
                                 <connections>
@@ -152,7 +152,7 @@
                     <tabBarItem key="tabBarItem" title="Test" id="gak-Nn-wTr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vvr-bI-hvq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
