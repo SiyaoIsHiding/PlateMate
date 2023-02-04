@@ -8,21 +8,11 @@
 import UIKit
 
 class RecipesViewController: UIViewController {
-
-    var recipeStore: RecipeStore! 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    @IBOutlet var scrollView: UIScrollView!
         
-        @IBOutlet var recipe_view: UIView!
-            @IBOutlet var recipe_img: UIImageView!
-            
-                let url = URL(string: "")
-            
-            @IBOutlet weak var save_button: UIButton!
-}
+        
     }
+    
 }
-
