@@ -8,11 +8,14 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
+    @IBOutlet var myLabel: UILabel!
+    @IBOutlet var logo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        myLabel.text = "HELLO!"
+        logo.image = UIImage(named: "platemateLogo")
+        
     }
-
-
 }
