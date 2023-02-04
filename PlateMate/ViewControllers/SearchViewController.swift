@@ -14,7 +14,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        myLabel.text = "HELLO!"
+        myLabel.text = "yo"
         logo.image = UIImage(named: "platemateLogo")
         
     }
