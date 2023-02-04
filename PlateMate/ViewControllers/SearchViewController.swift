@@ -14,7 +14,10 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
+//<<<<<<< HEAD
+//=======
     
     
     @IBAction func getRequest(_ sender: UIButton) {
@@ -30,4 +33,5 @@ class SearchViewController: UIViewController {
     
     // var recipes : [Recipes] = recipeStore.searchRecipeByKeywords(lamb)
 
+//>>>>>>> 3519dbda4b483dea6d31b14bf860a8bfe535b3db
 }
