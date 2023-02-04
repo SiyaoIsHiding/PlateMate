@@ -66,8 +66,22 @@
                     <view key="view" contentMode="scaleToFill" id="13p-xB-wNC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHZ-w9-HWa">
+                                <rect key="frame" x="157.5" y="432.5" width="99" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="get request"/>
+                                <connections>
+                                    <action selector="getRequest:" destination="CVS-RV-TEh" eventType="touchUpInside" id="Azq-by-FBh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MOP-4A-GNq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dHZ-w9-HWa" firstAttribute="centerX" secondItem="13p-xB-wNC" secondAttribute="centerX" id="APe-Ir-aOX"/>
+                            <constraint firstItem="dHZ-w9-HWa" firstAttribute="centerY" secondItem="13p-xB-wNC" secondAttribute="centerY" id="XZd-vg-VAr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="aYG-5F-giV"/>
                 </viewController>
