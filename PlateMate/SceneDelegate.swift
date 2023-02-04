@@ -17,6 +17,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        let recipeStore = RecipeStore()
+        let tabBar  = window!.rootViewController as! UITabBarController
+        var searchVC = tabBar.viewControllers![0] as! SearchViewController
+        searchVC.recipeStore = recipeStore
+        
+        var recipeVC = tabBar.viewControllers![1] as! RecipesViewController
+        recipeVC.recipeStore = recipeStore
+        
+        var shoppingVC = tabBar.viewControllers![2] as! ShoppingListViewController
+        shoppingVC.recipeStore = recipeStore
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
