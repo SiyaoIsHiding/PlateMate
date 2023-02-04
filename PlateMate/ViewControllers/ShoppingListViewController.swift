@@ -7,12 +7,11 @@
 
 import UIKit
 
-class ShoppingListViewController: UIViewController, UITableViewDataSource {
+class ShoppingListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var platemateLogo: UIImageView!
-    
     @IBOutlet weak var tableView: UITableView!
     
-    var items = ["item 1", "item 2", "item 3", "item 4", "item 6", "yo", "yee", "ok"]
+    var items = ["1 tablespoon olive oil", "6 lamb sausages", "Lime wedges", "balti curry paste", "lamb stock", "basmati rice", "lean leg steak", "spinach"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +21,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
         
         // Test table view
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "itemCell")
         view.addSubview(tableView)        
     }
@@ -33,7 +33,20 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "Caveat-Regular", size: 18)
+        if let font = UIFont(name: "Caveat-Regular", size: 18) {
+            print("Caveat-Regular font is available")
+        } else {
+            print("Caveat-Regular font is NOT available")
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            items.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 }
 
