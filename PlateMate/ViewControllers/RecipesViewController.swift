@@ -7,9 +7,10 @@
 
 import UIKit
 
-class RecipesViewController: UIViewController{
-    
-    //let recipeStore
+class RecipesViewController: UIViewController {
+
+    var recipeStore: RecipeStore! 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
