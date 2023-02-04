@@ -10,12 +10,14 @@
 		3F3551B0298E3C85005CA260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551AF298E3C85005CA260 /* AppDelegate.swift */; };
 		3F3551B2298E3C85005CA260 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551B1298E3C85005CA260 /* SceneDelegate.swift */; };
 		3F3551B4298E3C85005CA260 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551B3298E3C85005CA260 /* ViewController.swift */; };
-		3F3551B7298E3C85005CA260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3551B5298E3C85005CA260 /* Main.storyboard */; };
 		3F3551B9298E3C88005CA260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3551B8298E3C88005CA260 /* Assets.xcassets */; };
-		3F3551BC298E3C88005CA260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3551BA298E3C88005CA260 /* LaunchScreen.storyboard */; };
 		3F3551C7298E3C88005CA260 /* PlateMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551C6298E3C88005CA260 /* PlateMateTests.swift */; };
 		3F3551D1298E3C88005CA260 /* PlateMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551D0298E3C88005CA260 /* PlateMateUITests.swift */; };
 		3F3551D3298E3C88005CA260 /* PlateMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551D2298E3C88005CA260 /* PlateMateUITestsLaunchTests.swift */; };
+		3F3551E1298E3F44005CA260 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551E0298E3F44005CA260 /* SearchViewController.swift */; };
+		3F3551E3298E3F6B005CA260 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551E2298E3F6B005CA260 /* ShoppingListViewController.swift */; };
+		3F3551E5298E3F94005CA260 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3551E4298E3F94005CA260 /* RecipesViewController.swift */; };
+		3F3551E9298E4CC9005CA260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3551E8298E4CC9005CA260 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +42,17 @@
 		3F3551AF298E3C85005CA260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F3551B1298E3C85005CA260 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F3551B3298E3C85005CA260 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F3551B6298E3C85005CA260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F3551B8298E3C88005CA260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F3551BB298E3C88005CA260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3551BD298E3C88005CA260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3551C2298E3C88005CA260 /* PlateMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlateMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3551C6298E3C88005CA260 /* PlateMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateMateTests.swift; sourceTree = "<group>"; };
 		3F3551CC298E3C88005CA260 /* PlateMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlateMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3551D0298E3C88005CA260 /* PlateMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateMateUITests.swift; sourceTree = "<group>"; };
 		3F3551D2298E3C88005CA260 /* PlateMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F3551E0298E3F44005CA260 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3F3551E2298E3F6B005CA260 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		3F3551E4298E3F94005CA260 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		3F3551E8298E4CC9005CA260 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,14 @@
 		3F3551AE298E3C85005CA260 /* PlateMate */ = {
 			isa = PBXGroup;
 			children = (
+				3F3551E7298E3FB1005CA260 /* Networks */,
+				3F3551E6298E3FAC005CA260 /* Models */,
+				3F3551DF298E3F32005CA260 /* ViewControllers */,
 				3F3551AF298E3C85005CA260 /* AppDelegate.swift */,
 				3F3551B1298E3C85005CA260 /* SceneDelegate.swift */,
 				3F3551B3298E3C85005CA260 /* ViewController.swift */,
-				3F3551B5298E3C85005CA260 /* Main.storyboard */,
+				3F3551E8298E4CC9005CA260 /* Main.storyboard */,
 				3F3551B8298E3C88005CA260 /* Assets.xcassets */,
-				3F3551BA298E3C88005CA260 /* LaunchScreen.storyboard */,
 				3F3551BD298E3C88005CA260 /* Info.plist */,
 			);
 			path = PlateMate;
@@ -125,6 +131,30 @@
 				3F3551D2298E3C88005CA260 /* PlateMateUITestsLaunchTests.swift */,
 			);
 			path = PlateMateUITests;
+			sourceTree = "<group>";
+		};
+		3F3551DF298E3F32005CA260 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F3551E0298E3F44005CA260 /* SearchViewController.swift */,
+				3F3551E2298E3F6B005CA260 /* ShoppingListViewController.swift */,
+				3F3551E4298E3F94005CA260 /* RecipesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F3551E6298E3FAC005CA260 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F3551E7298E3FB1005CA260 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3551BC298E3C88005CA260 /* LaunchScreen.storyboard in Resources */,
 				3F3551B9298E3C88005CA260 /* Assets.xcassets in Resources */,
-				3F3551B7298E3C85005CA260 /* Main.storyboard in Resources */,
+				3F3551E9298E4CC9005CA260 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +289,9 @@
 			files = (
 				3F3551B4298E3C85005CA260 /* ViewController.swift in Sources */,
 				3F3551B0298E3C85005CA260 /* AppDelegate.swift in Sources */,
+				3F3551E3298E3F6B005CA260 /* ShoppingListViewController.swift in Sources */,
+				3F3551E1298E3F44005CA260 /* SearchViewController.swift in Sources */,
+				3F3551E5298E3F94005CA260 /* RecipesViewController.swift in Sources */,
 				3F3551B2298E3C85005CA260 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,25 +327,6 @@
 			targetProxy = 3F3551CD298E3C88005CA260 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3F3551B5298E3C85005CA260 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F3551B6298E3C85005CA260 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3F3551BA298E3C88005CA260 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F3551BB298E3C88005CA260 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3F3551D4298E3C88005CA260 /* Debug */ = {
