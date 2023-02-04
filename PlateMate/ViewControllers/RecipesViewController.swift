@@ -7,12 +7,21 @@
 
 import UIKit
 
-class RecipesViewController: UIViewController {
-
+class RecipesViewController: UIViewController{
+    
+    //let recipeStore
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
-
+    @IBOutlet var scrollView: UIScrollView!
+        
+        @IBOutlet var recipe_view: UIView!
+            @IBOutlet var recipe_img: UIImageView!
+            
+                let url = URL(string: "")
+            
+            @IBOutlet weak var save_button: UIButton!
 }
+    }
+}
+
