@@ -12,7 +12,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var items = ["item 1", "item 2", "item 3"]
+    var items = ["item 1", "item 2", "item 3", "item 4", "item 6", "yo", "yee", "ok"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
