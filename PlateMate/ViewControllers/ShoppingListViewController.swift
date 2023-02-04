@@ -13,6 +13,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource, UITab
     
     var items = ["1 tablespoon olive oil", "6 lamb sausages", "Lime wedges", "balti curry paste", "lamb stock", "basmati rice", "lean leg steak", "spinach"]
 
+    var recipeStore: RecipeStore!
     override func viewDidLoad() {
         super.viewDidLoad()
         platemateLogo.image = UIImage(named: "platemateLogo")

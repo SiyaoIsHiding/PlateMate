@@ -9,6 +9,8 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
+    var recipeStore: RecipeStore!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,6 +31,7 @@ class SearchViewController: UIViewController {
         task.resume()
     }
     
+    // var recipes : [Recipes] = recipeStore.searchRecipeByKeywords(lamb)
 
 //>>>>>>> 3519dbda4b483dea6d31b14bf860a8bfe535b3db
 }
