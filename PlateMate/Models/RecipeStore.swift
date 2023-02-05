@@ -8,7 +8,7 @@
 import Foundation
 
 public class RecipeStore{
-    private var fakeRecipe :[Recipe] = []
+    public var fakeRecipe :[Recipe] = []
     public init(){
         let i1 : Ingredient  = Ingredient(name: "Lamb", price: 10.0)
         let i2 : Ingredient = Ingredient(name: "Leek", price: 2)

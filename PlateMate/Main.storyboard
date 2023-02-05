@@ -50,14 +50,25 @@
                     <view key="view" contentMode="scaleToFill" id="TmU-Hf-asy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-SI-tkw">
+                                <rect key="frame" x="0.0" y="85" width="414" height="689"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="DNw-dv-aau"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Yf7-VU-JhI"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7U2-IE-W6j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recipes" image="book" catalog="system" id="iq0-fa-7YD"/>
+                    <connections>
+                        <outlet property="scrollView" destination="fSV-SI-tkw" id="FqZ-gE-qRP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGr-wS-MmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3065" y="-330"/>
+            <point key="canvasLocation" x="3063.768115942029" y="-330.13392857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oAd-6c-HHw">

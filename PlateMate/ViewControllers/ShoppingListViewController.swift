@@ -21,7 +21,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource, UITab
         platemateLogo.image = UIImage(named: "platemateLogo")
         
         recipe = recipeStore.getSavedRecipe()[0]
-       ingredients = recipeStore.getIngredientByRecipe(recipe: recipe)
+        ingredients = recipeStore.getIngredientByRecipe(recipe: recipe)
        
        for ingredient in ingredients {
            items.append(ingredient.name)
