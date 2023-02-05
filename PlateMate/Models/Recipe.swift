@@ -11,5 +11,5 @@ public struct Recipe{
     public let name: String
     public let id: String
     public let imageUrl: URL
-    public let ingredients: [Ingredient]
+    public let ingredients: [Ingredient]?
 }

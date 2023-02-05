@@ -9,5 +9,4 @@ import Foundation
 
 public struct Ingredient{
     public let name: String
-    public let price: Double
 }
