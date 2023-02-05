@@ -129,17 +129,13 @@
                             <constraint firstItem="rGg-Im-PrR" firstAttribute="width" secondItem="TmU-Hf-asy" secondAttribute="width" id="q7f-Ot-07n"/>
                         </constraints>
                     </view>
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="Item" id="iq0-fa-7YD"/>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="book" catalog="system" id="iq0-fa-7YD"/>
                     <connections>
                         <outlet property="recipe_img" destination="DwV-5p-JGV" id="wi8-n5-wnQ"/>
                         <outlet property="recipe_scroll" destination="F0f-sf-fYL" id="4O7-4b-fAl"/>
                         <outlet property="recipe_view" destination="mfG-o8-rfZ" id="pzD-zt-ZiC"/>
                         <outlet property="save_button" destination="FWo-UO-aPR" id="Gne-HP-FyN"/>
                     </connections>
-=======
-                    <tabBarItem key="tabBarItem" title="Recipes" image="book" catalog="system" id="iq0-fa-7YD"/>
->>>>>>> fdc269d6673d1dbc1d4edf6fffa17b7796b8f948
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGr-wS-MmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,37 +165,25 @@
         <scene sceneID="cnw-cr-vub">
             <objects>
                 <viewController id="CVS-RV-TEh" userLabel="Search" customClass="SearchViewController" customModule="PlateMate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="13p-xB-wNC">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="sex-k3-cEA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHZ-w9-HWa">
-                                <rect key="frame" x="151.5" y="431" width="111.5" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="get request"/>
-                                <connections>
-                                    <action selector="getRequest:" destination="CVS-RV-TEh" eventType="touchUpInside" id="Azq-by-FBh"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MbH-K1-YQ0">
-                                <rect key="frame" x="65" y="62" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="MOP-4A-GNq"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="dHZ-w9-HWa" firstAttribute="centerX" secondItem="13p-xB-wNC" secondAttribute="centerX" id="APe-Ir-aOX"/>
-                            <constraint firstItem="dHZ-w9-HWa" firstAttribute="centerY" secondItem="13p-xB-wNC" secondAttribute="centerY" id="XZd-vg-VAr"/>
-                        </constraints>
-                    </view>
+                        <textField key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="35" id="9MJ-h3-RCE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="textSearch:" destination="CVS-RV-TEh" eventType="editingDidEnd" id="iiE-9t-lLK"/>
+                            </connections>
+                        </textField>
+                    </tableView>
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="aYG-5F-giV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgP-zC-cff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="-345"/>
+            <point key="canvasLocation" x="2371.0144927536235" y="-345.53571428571428"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="OvP-fe-gGh">
@@ -210,7 +194,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6N-7c-EGm">
-                                <rect key="frame" x="134.5" y="432.5" width="145" height="31"/>
+                                <rect key="frame" x="124" y="430.5" width="166" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click to view detail"/>
                                 <connections>
@@ -241,7 +225,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aOy-eo-9hW">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="Put it into the pot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaC-eK-z2f">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
@@ -260,17 +244,17 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AfI-X2-VON">
-                                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AfI-X2-VON" id="7fo-Ir-C86">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="1" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cX0-Ln-aha">
-                                        <rect key="frame" x="0.0" y="647" width="414" height="78"/>
+                                        <rect key="frame" x="0.0" y="647" width="414" height="74"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="5zm-wF-Mt4"/>
@@ -319,7 +303,7 @@
                     <tabBarItem key="tabBarItem" title="Test" id="gak-Nn-wTr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vvr-bI-hvq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

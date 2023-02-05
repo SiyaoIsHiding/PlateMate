@@ -6,32 +6,42 @@
 //
 
 import UIKit
+    
 
-class SearchViewController: UIViewController {
-    
-    var recipeStore: RecipeStore!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return filteredData.count
     }
-//<<<<<<< HEAD
-//=======
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell", for: indexPath) as UITableViewCell
+        cell.textLabel?.text = filteredData[indexPath.row]
+        return cell
+    }
     
     
-    @IBAction func getRequest(_ sender: UIButton) {
-        let url = URL(string: "http://20.14.97.80")!
+        var recipeStore: RecipeStore!
+    
+        @IBOutlet weak var tableView: UITableView!
+        @IBOutlet weak var searchBar: UISearchBar!
 
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            guard let data = data else { return }
-            print(String(data: data, encoding: .utf8)!)
+        let recipes = ["beef", "pork", "chicken"]
+
+        var filteredData: [String]!
+
+        override func viewDidLoad() {
+            super.viewDidLoad()
+
+            filteredData = recipes
         }
 
-        task.resume()
-    }
-    
-    // var recipes : [Recipes] = recipeStore.searchRecipeByKeywords(lamb)
 
-//>>>>>>> 3519dbda4b483dea6d31b14bf860a8bfe535b3db
-}
+
+
+    @IBAction func textSearch(_ sender: UITextField) {
+    }
+        //var input =
+
+    }
+
+
