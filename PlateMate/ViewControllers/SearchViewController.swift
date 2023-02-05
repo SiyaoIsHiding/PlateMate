@@ -6,11 +6,14 @@
 //
 
 import UIKit
+    
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return filteredData.count
+    }
     
-    var recipeStore: RecipeStore!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,16 +29,40 @@ class SearchViewController: UIViewController {
         }
         let r = recipeStore.searchRecipeByKeywords(keywords: "beef", completion: comp)
     }
-//<<<<<<< HEAD
-//=======
-    
-    
-    
-    @IBAction func getRequest(_ sender: UIButton) async {
-        
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell", for: indexPath) as UITableViewCell
+        cell.textLabel?.text = filteredData[indexPath.row]
+        return cell
     }
     
-    // var recipes : [Recipes] = recipeStore.searchRecipeByKeywords(lamb)
+    
+    
+    @IBAction func getRequest(_ sender: UIButton) async {}
 
-//>>>>>>> 3519dbda4b483dea6d31b14bf860a8bfe535b3db
-}
+        var recipeStore: RecipeStore!
+    
+        @IBOutlet weak var tableView: UITableView!
+        @IBOutlet weak var searchBar: UISearchBar!
+
+        let recipes = ["beef", "pork", "chicken"]
+
+        var filteredData: [String]!
+
+        override func viewDidLoad() {
+            super.viewDidLoad()
+
+            filteredData = recipes
+        }
+
+
+
+
+    @IBAction func textSearch(_ sender: UITextField) {
+
+    }
+        //var input =
+
+    }
+
+
