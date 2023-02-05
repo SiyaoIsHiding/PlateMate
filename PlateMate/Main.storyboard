@@ -21,13 +21,15 @@
                                 <rect key="frame" x="87" y="78" width="240.00000000010255" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ybz-pf-FQd">
+                            <tableView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ybz-pf-FQd">
                                 <rect key="frame" x="0.0" y="214" width="414" height="554"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <color key="tintColor" systemColor="systemGray4Color"/>
                                 <edgeInsets key="layoutMargins" top="100" left="100" bottom="50" right="8"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="5yw-dq-CVi"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="mfA-Sa-vJd"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vgs-i2-QyS"/>
@@ -35,8 +37,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Shopping List" image="list.bullet" catalog="system" id="z5S-nI-qsI"/>
                     <connections>
-                        <outlet property="platemateLogo" destination="3Vu-e7-pQR" id="q3l-Qo-sNU"/>
-                        <outlet property="tableView" destination="Ybz-pf-FQd" id="Ywn-Db-2ds"/>
+                        <outlet property="platemateLogo" destination="3Vu-e7-pQR" id="Pzj-3Z-8Ym"/>
+                        <outlet property="tableView" destination="Ybz-pf-FQd" id="YZf-0T-RGp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTA-AH-iMN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -54,6 +56,12 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-SI-tkw">
                                 <rect key="frame" x="0.0" y="85" width="414" height="689"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jZa-Va-yw7">
+                                        <rect key="frame" x="87" y="63" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="DNw-dv-aau"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Yf7-VU-JhI"/>
                             </scrollView>
@@ -63,6 +71,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Recipes" image="book" catalog="system" id="iq0-fa-7YD"/>
                     <connections>
+                        <outlet property="UIImage" destination="jZa-Va-yw7" id="MmD-xu-vpF"/>
                         <outlet property="scrollView" destination="fSV-SI-tkw" id="FqZ-gE-qRP"/>
                     </connections>
                 </viewController>
