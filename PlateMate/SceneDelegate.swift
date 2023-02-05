@@ -19,15 +19,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         let recipeStore = RecipeStore()
         let tabBar  = window!.rootViewController as! UITabBarController
-        var searchVC = tabBar.viewControllers![0] as! SearchViewController
+        let searchVC = tabBar.viewControllers![0] as! SearchViewController
         searchVC.recipeStore = recipeStore
         
-        var recipeVC = tabBar.viewControllers![1] as! RecipesViewController
+        let recipeVC = tabBar.viewControllers![1] as! RecipesViewController
         recipeVC.recipeStore = recipeStore
         
-        var shoppingVC = tabBar.viewControllers![2] as! ShoppingListViewController
+        let shoppingVC = tabBar.viewControllers![2] as! ShoppingListViewController
         shoppingVC.recipeStore = recipeStore
         
+        let navController = tabBar.viewControllers![3] as! UINavigationController
+        
+        let testingVC = navController.topViewController as! TestViewController
+        
+        testingVC.recipeStore = recipeStore
         
     }
 

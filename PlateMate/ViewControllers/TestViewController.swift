@@ -21,4 +21,15 @@ class TestViewController: UIViewController {
         print("button pressed")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "detail":
+            let detailVC = segue.destination as! DetailViewController
+            detailVC.recipe = recipeStore.getSavedRecipe()[0]
+            detailVC.recipeStore = recipeStore
+            //TODO: fake
+        default:
+            print("Wrong segue identifier")
+        }
+    }
 }
