@@ -11,12 +11,21 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var platemateLogo: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
-    var items = ["1 tablespoon olive oil", "6 lamb sausages", "Lime wedges", "balti curry paste", "lamb stock", "basmati rice", "lean leg steak", "spinach"]
+    var items = [String]()
 
     var recipeStore: RecipeStore!
+    var recipe: Recipe!
+    var ingredients: [Ingredient]!
     override func viewDidLoad() {
         super.viewDidLoad()
         platemateLogo.image = UIImage(named: "platemateLogo")
+        
+        recipe = recipeStore.getSavedRecipe()[0]
+       ingredients = recipeStore.getIngredientByRecipe(recipe: recipe)
+       
+       for ingredient in ingredients {
+           items.append(ingredient.name)
+       }
         
         self.view.addSubview(tableView)
         
