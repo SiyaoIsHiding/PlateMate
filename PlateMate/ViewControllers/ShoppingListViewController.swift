@@ -34,12 +34,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row]
-        cell.textLabel?.font = UIFont(name: "Caveat-Regular", size: 18)
-        if let font = UIFont(name: "Caveat-Regular", size: 18) {
-            print("Caveat-Regular font is available")
-        } else {
-            print("Caveat-Regular font is NOT available")
-        }
+        cell.textLabel?.font = UIFont(name: "Menlo", size: 18)
         return cell
     }
     
