@@ -43,7 +43,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row]
-        cell.textLabel?.font = UIFont(name: "Bradley Hand", size: 18)
+        cell.textLabel?.font = UIFont(name: "Menlo", size: 18)
         return cell
     }
     
