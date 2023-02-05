@@ -11,12 +11,21 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var platemateLogo: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
-    var items = ["1 tablespoon olive oil", "6 lamb sausages", "Lime wedges", "balti curry paste", "lamb stock", "basmati rice", "lean leg steak", "spinach"]
+    var items = [String]()
 
     var recipeStore: RecipeStore!
+    var recipe: Recipe!
+    var ingredients: [Ingredient]!
     override func viewDidLoad() {
         super.viewDidLoad()
         platemateLogo.image = UIImage(named: "platemateLogo")
+        
+        recipe = recipeStore.getSavedRecipe()[0]
+       ingredients = recipeStore.getIngredientByRecipe(recipe: recipe)
+       
+       for ingredient in ingredients {
+           items.append(ingredient.name)
+       }
         
         self.view.addSubview(tableView)
         
@@ -34,12 +43,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row]
-        cell.textLabel?.font = UIFont(name: "Caveat-Regular", size: 18)
-        if let font = UIFont(name: "Caveat-Regular", size: 18) {
-            print("Caveat-Regular font is available")
-        } else {
-            print("Caveat-Regular font is NOT available")
-        }
+        cell.textLabel?.font = UIFont(name: "Menlo", size: 18)
         return cell
     }
     
